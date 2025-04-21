@@ -6,9 +6,16 @@ import TopNavigation from "./components/TopNavigation";
 const DashboardLayout = ({ children }) => {
 	return (
 		<div className="flex min-h-screen">
+			{/* Sidebar */}
 			<Sidebar />
-			<div className="flex-1 flex flex-col">
+
+			{/* Main Content Area */}
+			<div className="bg-white flex-1 flex flex-col ml-64">
+				{" "}
+				{/* ml-64 pushes content to the right */}
+				{/* Top Navigation */}
 				<TopNavigation />
+				{/* Main Content */}
 				<main className="p-6">{children}</main>
 			</div>
 		</div>
