@@ -1,5 +1,6 @@
 // src/components/landing/Header.jsx
 import React from "react";
+import Link from "next/link";
 
 const Header = () => {
 	return (
@@ -54,9 +55,12 @@ const Header = () => {
 					<button className="hidden md:block text-gray-700 font-medium hover:text-gold-600 transition">
 						AR
 					</button>
-					<button className="bg-navy-800 hover:bg-navy-900 text-white px-5 py-2 rounded-md font-medium transition">
+					<Link
+						href="/backoffice/dashboard"
+						className="bg-navy-800 hover:bg-navy-900 text-indigo-600 font-bold px-5 py-2 rounded-md transition text-center"
+					>
 						Agent Login
-					</button>
+					</Link>
 					<button className="md:hidden text-gray-700">☰</button>
 				</div>
 			</div>
