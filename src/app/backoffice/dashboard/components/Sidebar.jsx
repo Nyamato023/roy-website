@@ -1,4 +1,7 @@
+"use client"; // If you're using app/ directory in Next 13/14
+
 import React from "react";
+import Link from "next/link";
 import "remixicon/fonts/remixicon.css";
 
 const Sidebar = () => {
@@ -31,30 +34,30 @@ const Sidebar = () => {
 						<div className="px-4 mb-2 text-xs font-medium text-gray-500 uppercase tracking-wider sidebar-text">
 							Main
 						</div>
-						<a
-							href="#"
+						<Link
+							href="/backoffice/dashboard"
 							className="nav-link flex items-center px-4 py-3 text-gray-700"
 						>
 							<div className="w-6 h-6 flex items-center justify-center mr-3 icon">
 								<i className="ri-dashboard-line"></i>
 							</div>
 							<span className="text-sm sidebar-text">Dashboard</span>
-						</a>
+						</Link>
 
 						<div className="px-4 mt-6 mb-2 text-xs font-medium text-gray-500 uppercase tracking-wider sidebar-text">
 							Recruitment
 						</div>
-						<a
-							href="#"
+						{/* <Link
+							href="/backoffice/jobs"
 							className="nav-link active flex items-center px-4 py-3 text-gray-700"
 						>
 							<div className="w-6 h-6 flex items-center justify-center mr-3 icon">
 								<i className="ri-briefcase-line"></i>
 							</div>
 							<span className="text-sm sidebar-text">Jobs Management</span>
-						</a>
-						<a
-							href="#"
+						</Link> */}
+						<Link
+							href="/backoffice/candidates"
 							className="nav-link flex items-center px-4 py-3 text-gray-700"
 						>
 							<div className="w-6 h-6 flex items-center justify-center mr-3 icon">
@@ -63,9 +66,9 @@ const Sidebar = () => {
 							<span className="text-sm sidebar-text">
 								Candidates Management
 							</span>
-						</a>
-						<a
-							href="#"
+						</Link>
+						<Link
+							href="/backoffice/applications"
 							className="nav-link flex items-center px-4 py-3 text-gray-700"
 						>
 							<div className="w-6 h-6 flex items-center justify-center mr-3 icon">
@@ -74,60 +77,60 @@ const Sidebar = () => {
 							<span className="text-sm sidebar-text">
 								Applications Management
 							</span>
-						</a>
-						<a
-							href="#"
+						</Link>
+						<Link
+							href="/backoffice/visa-cases"
 							className="nav-link flex items-center px-4 py-3 text-gray-700"
 						>
 							<div className="w-6 h-6 flex items-center justify-center mr-3 icon">
 								<i className="ri-passport-line"></i>
 							</div>
 							<span className="text-sm sidebar-text">Visa Cases</span>
-						</a>
+						</Link>
 
 						<div className="px-4 mt-6 mb-2 text-xs font-medium text-gray-500 uppercase tracking-wider sidebar-text">
 							Tools
 						</div>
-						<a
-							href="#"
+						<Link
+							href="/backoffice/document-editor"
 							className="nav-link flex items-center px-4 py-3 text-gray-700"
 						>
 							<div className="w-6 h-6 flex items-center justify-center mr-3 icon">
 								<i className="ri-file-edit-line"></i>
 							</div>
 							<span className="text-sm sidebar-text">Document Editor</span>
-						</a>
-						<a
-							href="#"
+						</Link>
+						<Link
+							href="/backoffice/communication-center"
 							className="nav-link flex items-center px-4 py-3 text-gray-700"
 						>
 							<div className="w-6 h-6 flex items-center justify-center mr-3 icon">
 								<i className="ri-message-2-line"></i>
 							</div>
 							<span className="text-sm sidebar-text">Communication Center</span>
-						</a>
-						<a
-							href="#"
+						</Link>
+						<Link
+							href="/backoffice/reports-analytics"
 							className="nav-link flex items-center px-4 py-3 text-gray-700"
 						>
 							<div className="w-6 h-6 flex items-center justify-center mr-3 icon">
 								<i className="ri-bar-chart-line"></i>
 							</div>
 							<span className="text-sm sidebar-text">Reports & Analytics</span>
-						</a>
+						</Link>
 
 						<div className="px-4 mt-6 mb-2 text-xs font-medium text-gray-500 uppercase tracking-wider sidebar-text">
 							Configuration
 						</div>
-						<a
-							href="#"
+						<Link
+							href="/backoffice/settings"
 							className="nav-link flex items-center px-4 py-3 text-gray-700"
 						>
 							<div className="w-6 h-6 flex items-center justify-center mr-3 icon">
 								<i className="ri-settings-line"></i>
 							</div>
 							<span className="text-sm sidebar-text">Settings</span>
-						</a>
+						</Link>
 					</div>
 				</div>
 
